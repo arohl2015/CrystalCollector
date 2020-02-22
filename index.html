@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Crystal Collector Game</title>
     <!--Adding in links to stylesheets-->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -17,21 +20,28 @@
     </div>
 
     <div class="container">
-        <div class="row" id="gamearea">
-            <div class="col-sm-6" id="left column">
+        <div class="row">
+            <div class="col-sm-12 rules">
                 <h3>Rules</h3>
-                <p>You will be give a random number at the beginning of this game.</p>
-                <p>There are four crystals at the bottom of this page. By clicking on a crystal, you will add a specific amount of points to your score.</p>
-                <p>You will win the game if your total score matches the random number. If your score exceeds the ramdom number, you lose.</p>
-                <p>The value of each crystal is hidden from you until you click on it.</p>
-                <p>Each time the game restarts, the value of each crystal will change.</p>
+                <p>You will be give a random number at the beginning of this game. You will win the game if your total score matches the random number. If your score exceeds the random number, you lose.</p>
+                <p>There are four crystals at the bottom of this page. By clicking on a crystal, you will add a specific amount of points to your score. Please note the value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time the game restarts, the value of each crystal and the random number will change.</p>
                 <p>Good Luck!</p>
             </div>
-
-
-
-            
         </div>
+        <!--Next, I start the next row to identify the counters and images-->
+        <div class="row" id="gameSection">
+
+			<!-- first column to identify random number to match -->
+			<div class="col-md-3" id="numberSection">
+				<h3 class="text-center" id="random">Match Number:</h3>
+				<h1 class="numberBox text-center" id="randomNumber">120</h1>
+			</div>
+
+			<!-- This is where I start inserting my images for the crystal buttons -->
+			<div class="col-md-6 text-center" id="buttonSection">
+
+			
     </div>
 
 
