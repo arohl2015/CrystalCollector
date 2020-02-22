@@ -1,8 +1,8 @@
 # unit-4-game
 
-/* The project for this week is to create a Crystal Collector game using the concepts gone over in class with JavaScript and JQuery.
+The project for this week was to create a Crystal Collector game using JavaScript and JQuery.
 
-The game is:
+The game instructions are as follows:
 
 * Displaying 4 crystals as buttons on the page.
 * Showing the player a random number at the start of the game.
