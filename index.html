@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Crystal Collector Game</title>
-    <!--Adding in links to stylesheets-->
+    <!--Adding in links to stylesheets and jquery code-->
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
@@ -30,12 +30,12 @@
                 <p>Good Luck!</p>
             </div>
         </div>
-        <!--Next, I start the next row to identify the counters and images-->
+        <!--Start a row to identify the counters and images-->
         <div class="row" id="gameSection">
 
-			<!-- first column is created to show random number generated to start game -->
+			<!-- Create first column to show random number generated to start game -->
 			<div class="col-md-2" id="numberSection">
-				<h3 class="text-center" id="random">Match Number: </h3>
+				<h4 class="text-center" id="random">Match Number: </h4>
 			</div>
 
 			<!-- second column - this is where I insert my images for the crystal buttons -->
@@ -46,16 +46,16 @@
 				<button id="button-4" value="0"><img src="assets/images/redegem.jfif" class="img-responsive icons" id="gem4"></button>
 			</div>
 
-			<!-- third column is created to show players score -->
+			<!-- Create third column to show players score -->
 			<div class="col-md-2" id="totalPoints">
-				<h3 class="text-center" id="score">Your Total Score: </h3>
+				<h4 class="text-center" id="score">Your Total Score: </h4>
 			</div>
 		</div>
 
-		<!-- Last, created a foot section to track the players wins and losses -->
+		<!-- Create a footer section to track the players wins and losses -->
 		<div class="row" id="scoreSection">
 
-			<!-- spacer column -->
+			<!-- spacer column (to follow bootstrap rule of 12) -->
 			<div class="col-md-3"></div>
 
 			<!-- wins column -->
@@ -68,15 +68,14 @@
 				<h3 class="text-center" id="losses">Losses: </h3>
 			</div>
 
-			<!-- spacer column -->
+			<!-- spacer column (to follow bootstrap rule of 12) -->
 			<div class="col-md-3"></div>
 
 		</div>	
     </div>
-
+    
+<!--link in JS that links to js game file in assets folder-->
 <script type="text/javascript" src="assets/javascript/game.js"></script>
-
-
 
 </body>
 </html>

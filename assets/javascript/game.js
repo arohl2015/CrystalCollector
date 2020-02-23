@@ -1,6 +1,6 @@
 // Beginning of JS code.
 
-// wrote in all vars to remember all the <h> tags entered for each of the items to track in logic.
+// wrote in all vars to remember all the <h> tags entered in the html to track in logic.
 
 var random = 0
 var score = 0
@@ -18,6 +18,7 @@ $(document).ready(function () {
 function startGame() {
     var randnum1 = Math.floor(Math.random() * 11) + 1;
     $("#button-1").attr("value", randnum1);
+    //used console.log after each button to ensure logic was working in the console
     console.log(randnum1);
     var randnum1 = Math.floor(Math.random() * 11) + 1;
     $("#button-2").attr("value", randnum1);
@@ -28,7 +29,7 @@ function startGame() {
     var randnum1 = Math.floor(Math.random() * 11) + 1;
     $("#button-4").attr("value", randnum1);
     console.log(randnum1);
-    random = Math.floor(Math.random() * 100) + 19;
+    random = Math.floor(Math.random() * 100) + 20;
     $("#random").text("Match Number:" + random);
     console.log(randnum1, random);
 }
@@ -40,12 +41,12 @@ $("button").on("click", function (event) {
     var gemValue = $(this).attr("value");
     score += parseInt(gemValue);
     console.log(score);
-    $("#score").text("Your Total Score: " + score);
+    $("#score").text("Your Total Score:"  + score);
     if (score === random) {
         wins++;
         alert("You Won!");
-        $("#wins").text("Wins:" + wins);
-        $("#score").text("Your Total Score: " + score);
+        $("#wins").text("Wins:"  + wins);
+        $("#score").text("Your Total Score:"  + score);
         reset();
     }
     else if (score > random) {
@@ -58,9 +59,9 @@ $("button").on("click", function (event) {
 
 // game reset
 function reset() {
-    alert("Let's collect more Crystals!");
+    alert("Let's Collect More Crystals!");
     score = 0;
-    $("#score").text("Your Total Score: " + score);
+    $("#score").text("Your Total Score:" + score);
     startGame();
 }
 
