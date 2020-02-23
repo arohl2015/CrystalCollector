@@ -1,6 +1,6 @@
 // Beginning of JS code.
 
-// add in variables
+// wrote in all vars to remember all the <h> tags entered for each of the items to track in logic.
 
 var random = 0
 var score = 0
@@ -8,11 +8,13 @@ var wins = 0
 var losses = 0
 var crystals = 0
 
-// Start by assigning a math floor function to all variables
+// Start by getting the game to run by calling on the start game function using document.ready
 $(document).ready(function () {
     startGame()
 })
 
+// Create the function to start the game and call all the random numbers used. 1-12 for the gems
+// 19-120 for the match score. since it's JQuery, need to call attributes and not use any = signs
 function startGame() {
     var randnum1 = Math.floor(Math.random() * 11) + 1;
     $("#button-1").attr("value", randnum1);
@@ -31,10 +33,7 @@ function startGame() {
     console.log(randnum1, random);
 }
 
-
-
-
-//does the score win or lose the game
+//does the score win or lose the game? only need if/else for the === and >
 // making the gems clickable when user clicks on them
 $("button").on("click", function (event) {
     event.preventDefault();
@@ -45,21 +44,21 @@ $("button").on("click", function (event) {
     if (score === random) {
         wins++;
         alert("You Won!");
-        $("#wins").text("Wins" + wins);
+        $("#wins").text("Wins:" + wins);
         $("#score").text("Your Total Score: " + score);
         reset();
     }
     else if (score > random) {
         losses++;
         alert("You Lost :(")
-        $("#losses").text("Losses" + losses);
+        $("#losses").text("Losses:" + losses);
         reset();
     }
 })
 
 // game reset
 function reset() {
-    alert("Another Game?");
+    alert("Let's collect more Crystals!");
     score = 0;
     $("#score").text("Your Total Score: " + score);
     startGame();
