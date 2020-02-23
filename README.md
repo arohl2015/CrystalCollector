@@ -4,7 +4,7 @@ The project for this week was to create a Crystal Collector game using JavaScrip
 
 *How to Play:*
 
-* A random number is generated on the page for the player to match.
+* A random number is generated on the page for the player to match (between 19-120).
 * Four gems are on the page, each randomly assigned values from 1-12.
 * Each time the player clicks on a button, the hidden value of the gem is added to the player score.
 * If the player matches the random score they win; if they go over, they lose.
