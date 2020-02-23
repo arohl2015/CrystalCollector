@@ -21,8 +21,8 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 rules">
-                <h3>Rules</h3>
+            <div class="col-md-12 rules">
+                <h2>Rules</h2>
                 <p>You will be give a random number at the beginning of this game. You will win the game if your total score matches the random number. If your score exceeds the random number, you lose.</p>
                 <p>There are four crystals at the bottom of this page. By clicking on a crystal, you will add a specific amount of points to your score. Please note the value of each crystal is hidden from you until you click on it.</p>
                 <p>Each time the game restarts, the value of each crystal and the random number will change.</p>
@@ -32,14 +32,45 @@
         <!--Next, I start the next row to identify the counters and images-->
         <div class="row" id="gameSection">
 
-			<!-- first column to identify random number to match -->
-			<div class="col-md-3" id="numberSection">
-				<h3 class="text-center" id="random">Match Number:</h3>
-				<h1 class="numberBox text-center" id="randomNumber">120</h1>
+			<!-- first column is created to show random number generated to start game -->
+			<div class="col-md-2" id="numberSection">
+				<h3 class="text-center" id="random">Match Number: </h3>
 			</div>
 
-			<!-- This is where I start inserting my images for the crystal buttons -->
-			<div class="col-md-6 text-center" id="buttonSection">
+			<!-- second column - this is where I insert my images for the crystal buttons -->
+			<div class="col-md-8 text-center" id="buttonSection">
+				<button id="button-1" value="0"><img src="assets/images/bluegem.jfif" class="img-responsive icons" id="icon1"></button>
+				<button id="button-2" value="0"><img src="assets/images/greengem.jfif" class="img-responsive icons" id="icon2"></button>
+				<button id="button-3" value="0"><img src="assets/images/purplegem.jfif" class="img-responsive icons" id="icon3"></button>
+				<button id="button-4" value="0"><img src="assets/images/redegem.jfif" class="img-responsive icons" id="icon4"></button>
+			</div>
+
+			<!-- third column is created to show players score -->
+			<div class="col-md-2" id="totalPoints">
+				<h3 class="text-center" id="score">Your Total Score: </h3>
+			</div>
+		</div>
+
+		<!-- Last, created a foot section to track the players wins and losses -->
+		<div class="row" id="scoreSection">
+
+			<!-- spacer column -->
+			<div class="col-md-3"></div>
+
+			<!-- wins column -->
+			<div class="col-md-3" id="winSection">
+				<h3 class="text-center" id="wins">Wins:	</h3>
+			</div>
+
+			<!-- losses column -->
+			<div class="col-md-3" id="lossSection">
+				<h3 class="text-center" id="losses">Losses: </h3>
+			</div>
+
+			<!-- spacer column -->
+			<div class="col-md-3"></div>
+
+		</div>
 
 			
     </div>

@@ -1,3 +1,24 @@
+.jumbotron {
+    background-image: url(../images/swarovski.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-weight: bolder;
+    color: black;
+    background-color: lightgray;
+    width: 100%;
+}
+
 .rules {
     text-align: center;
+}
+
+.icons {
+	display: inline-block;
+  	max-width: 100px;
+  	max-height: 100px;
+  	width: auto;
+  	height: auto;
+  	margin:10px;
 }
