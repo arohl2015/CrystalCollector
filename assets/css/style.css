@@ -13,9 +13,14 @@ body {
 
 h1 {
     font-weight: bolder;
+    font-family: 'Lobster';
     color: black;
     background-color: lightgray;
     width: 100%;
+}
+
+p {
+    font-family: 'Shadows Into Light Two';
 }
 
 .rules {
