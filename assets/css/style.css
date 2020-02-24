@@ -3,6 +3,14 @@
     background-size: cover;
 }
 
+.container {
+    background-image: url(../images/shinycrystal.jpg);
+}
+
+body {
+    background-image: url(..//images/whitecrystal.jpg);
+}
+
 h1 {
     font-weight: bolder;
     color: black;
