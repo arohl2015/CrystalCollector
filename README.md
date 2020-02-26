@@ -1,6 +1,8 @@
 # unit-4-game
 
-The project for this week was to create a Crystal Collector game using the skills learned in class up until this point. You can access my game here: https://arohl2015.github.io/unit-4-game/ You can also access my updated portfolio page here: https://arohl2015.github.io/Responsive-Portfolio/portfolio.html
+The project for this week was to create a Crystal Collector game using the skills learned in class up until this point. You can access my game here: https://arohl2015.github.io/unit-4-game/. 
+
+You can also access my updated portfolio page here: https://arohl2015.github.io/Responsive-Portfolio/portfolio.html.
 
 # How to Play:
 
